@@ -1,12 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+    padding: 20px 0;
+}
 
-button{
-    color: #27aedb;
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e8ab5;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e8ab5;
 }
