@@ -3,10 +3,10 @@ import Card from './Card';
 
 const FormState = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
+    full_name: '',
     email: '',
     password: '',
-    passwordConfirmation: ''
+    password_confirmation: ''
   });
 
   const handleChange = (e) => {
@@ -23,10 +23,10 @@ const FormState = () => {
     
     // Clear form
     setFormData({
-      fullName: '',
+      full_name: '',
       email: '',
       password: '',
-      passwordConfirmation: ''
+      password_confirmation: ''
     });
   };
 
@@ -41,8 +41,8 @@ const FormState = () => {
           <input
             type="text"
             id="full_name"
-            name="fullName"
-            value={formData.fullName}
+            name="full_name"
+            value={formData.full_name}
             onChange={handleChange}
             style={{
               width: '100%',
@@ -103,8 +103,8 @@ const FormState = () => {
           <input
             type="password"
             id="password_confirmation"
-            name="passwordConfirmation"
-            value={formData.passwordConfirmation}
+            name="password_confirmation"
+            value={formData.password_confirmation}
             onChange={handleChange}
             autoComplete="new-password"
             style={{
